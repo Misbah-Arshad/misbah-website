@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Service Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"type="image/png" href="fav.png">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+               
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="home-section">
+        <h1 id="welcome-heading">Welcome to Service Finder</h1>
+        <div class="homepage-container">
+        <p>Connecting you with the best plumbers and electricians in your area.</p>
+        </div>
+    </section>
+    <section id="services">
+        <h1>Our Services</h1>
+        
+        <div class="services-container">
+            <div class="service-box">
+                <img src="plumber.png" alt="Plumber Services">
+                <div class="service-content">
+                    <h2>Plumber Service</h2>
+                    <p>Specializes in residential plumbing and repairs.</p>
+                </div>
+            </div>
+            
+            <div class="service-box">
+                <img src="electrician.png" alt="Electrician Service">
+                <div class="service-content">
+                    <h2>Electrician Services</h2>
+                    <p>Professional electrical services for home and business.</p>
+                </div>
+            </div>
+            
+            <div class="service-box">
+                <img src="Sweeper.png" alt="Sweeper Service">
+                <div class="service-content">
+                    <h2>Sweeper Services</h2>
+                    <p>Professional Cleaner services for home and offices.</p>
+                </div>
+            </div>
+    
+            <div class="service-box">
+                <img src="Carpenter.png" alt="Carpenter Service">
+                <div class="service-content">
+                    <h2>Carpenter Services</h2>
+                    <p>Professional carpenter who builds, repairs, and shapes structures or objects using wood.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Service Finder is a platform designed to connect users with reliable plumbers, electricians, sweepers, and carpenters in their local area. Our platform ensures that you get the best local experts, committed to delivering high-quality results every time. Let us help you find the service whenever you need it.</p>
+        <div class="about-container">
+            <video controls>
+                <source src="services video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    
+            <img src="back.png" alt="About Us Image" class="about-image">
+        </div>
+    </section>
+    
+    
+   
+    
+    
+    <section id="booking">
+        <h1>Book a Service</h1>
+        <form id="booking-form">
+            <label for="booking-name">Full Name:</label>
+            <input type="text" id="booking-name" required>
+
+            <label for="booking-email">Email:</label>
+            <input type="email" id="booking-email" required>
+
+            <label for="booking-service">Service Type:</label>
+            <select id="booking-service" required>
+                <option value="plumber">Plumber</option>
+                <option value="electrician">Electrician</option>
+                <option value="carpenter">carpenter</option>
+                <option value="Sweeper">Sweeper</option>
+            </select>
+
+            <label for="booking-date">Select Date:</label>
+            <input type="date" id="booking-date" name="date" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+      
+<div id="confirmation-message" style="display: none;"></div>
+
+          </section>
+    <section id="reviews">
+        <h1>Customer Reviews</h1>
+        <div class="reviews-container">
+            <div class="review">
+                <h3>Gulam</h3>
+                <p>Excellent service! The plumber arrived on time and fixed my issue within an hour.</p>
+                <span>Rating: ★★★★★</span>
+            </div>
+            <div class="review">
+                <h3>Maria</h3>
+                <p>Very professional electrician. Solved my wiring issue quickly. Highly recommended!</p>
+                <span>Rating: ★★★★☆</span>
+            </div>
+        </div>
+    
+        <form id="review-form">
+            <h2>Leave a Review</h2>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+    
+            <label for="review">Your Review:</label>
+            <textarea id="review" rows="4" required></textarea>
+    
+            <label for="rating">Rating:</label>
+            <select id="rating" required>
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+            </select>
+    
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+    
+    <section id="faq">
+        <h1>FAQ</h1>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>How do I book a service?</h3>
+                <p>You can book a service by visiting the "Book Now" section and filling out the form.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are the service providers verified?</h3>
+                <p>Yes, all service providers are vetted and verified for their professionalism and quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+    
+       
+        <div class="contact-links">
+            <a href="mailto:example@example.com" class="contact-link">Email Us</a>
+            <a href="https://facebook.com/yourpage" class="contact-link" target="_blank">Contact us on Facebook</a>
+        </div>
+    
+       
+        <button id="contact-us-btn" class="contact-us-btn">Contact Us</button>
+    
+        
+        <form id="contact-form" class="contact-form">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" required>
+    
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" required>
+    
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" rows="4" required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content" id="footer">
+            <p>© 2024 Service Finder. All rights reserved.</p>
+            <div class="footer-links">
+                <p>Contact us:</p>
+                <a href="https://www.facebook.com/yourpage" target="_blank" class="social-link">Facebook</a> |
+                <a href="mailto:your-email@example.com" class="social-link">Email Us</a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script1.js"></script>
+</body>
+</html>
